@@ -1,10 +1,15 @@
+var AmazonProducts = require('amazon-products');
+
 /**
  * GET /
  * Home page.
  */
 
 exports.index = function(req, res) {
-  res.render('home', {
-    title: 'Home'
-  });
+	AmazonProducts.getProductDetail({url: 'http://www.amazon.com/dp/B0015X7HD4'}, function(err, productDetail) {
+	  res.render('home', {
+	    title: 'Home',
+			productDetail: productDetail
+	  });
+	});
 };
