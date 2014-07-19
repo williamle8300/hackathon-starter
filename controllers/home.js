@@ -7,9 +7,9 @@ var AmazonProducts = require('amazon-products');
 
 exports.index = function(req, res) {
 	AmazonProducts.getProductDetail({url: 'http://www.amazon.com/dp/B0015X7HD4'}, function(err, productDetail) {
-	  res.render('home', {
-	    title: 'Home',
-			productDetail: productDetail
-	  });
+		console.log(productDetail);
 	});
+  res.render('home', {
+    title: 'Home'
+  });
 };
