@@ -40,6 +40,7 @@
     "node-foursquare": "^0.2.1",
     "node-linkedin": "^0.2.0",
     "nodemailer": "^1.0.1",
+    "nunjucks": "*",
     "passport": "^0.2.0",
     "passport-facebook": "^1.0.3",
     "passport-github": "^0.1.5",
