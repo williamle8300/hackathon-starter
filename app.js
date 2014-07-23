@@ -70,8 +70,8 @@ var csrfExclude = ['/url1', '/url2'];
 
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
-//nunjucks.configure('views', {autoescape: true, express: app});
+//app.set('view engine', 'jade');
+nunjucks.configure('views', {autoescape: true, express: app});
 app.use(compress());
 app.use(connectAssets({
   paths: ['public/css', 'public/js'],
