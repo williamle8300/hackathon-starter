@@ -1,7 +1,12 @@
-# Pared Down Hackathon-Starter
-Removed "connect-assets," and cloned a new Bootstrap. Use `grunt watch` in `/public/css/lib/bootstrap` to see changes
-Changed templating to [Nunjucks](http://mozilla.github.io/nunjucks/)
-Removed API Usage examples. See Sahat if you want to reimplement those files again
+# hackathon-starter
+A rendition of Sahat's [hackathon-starter](https://github.com/sahat/hackathon-starter). This version uses the tools, and development workflows I use.
+
+**Differences between Sahat's version:**
+- Removed "connect-assets," and cloned a new Bootstrap. Use `grunt watch` in `/public/css/lib/bootstrap` to see changes
+- Changed templating to [Nunjucks](http://mozilla.github.io/nunjucks/)
+- Removed API Usage examples. See Sahat if you want to reimplement those files again
+
+The complete glyphicon, font-awesome, and ionicon iconsets are included.
 
 To deploy:
 npm install in `/`
