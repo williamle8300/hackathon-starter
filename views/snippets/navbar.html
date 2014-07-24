@@ -6,7 +6,6 @@
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li><a href="/">Home</a></li>
-        <li><a href="/api">API Examples</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -17,6 +16,7 @@
             <img src='{{user.profile.picture}}'/>
             {% else %}
             <img src='{{user.gravatar(30)}}'/>
+						{% endif %}
 						{% if user.profile.name %}
 						{{user.profile.name}}
 						{% elif user.email %}
@@ -26,7 +26,6 @@
 						{% endif %}
 						&nbsp;
             <i class="caret"></i>
-						{% endif %}
 					</a>
 					<ul class="dropdown-menu">
 					  <li><a href="/account"><span class="ion-person"></span> My Account</a></li>

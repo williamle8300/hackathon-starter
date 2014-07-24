@@ -1,87 +1,102 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="csrf-token">
-    <meta name="author" content="">
-    <title>{{title}} | Hackathon Starter</title>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="csrf-token">
+		<meta name="author" content="">
+		<title>{{title}} | Hackathon Starter</title>
+		<link rel="stylesheet" href="/css/lib/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="/css/lib/bootstrap/dist/css/bootstrap-theme.min.css" />
 		<link rel="stylesheet" href="//code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
 		<style type="text/css">
-		html {
-		  position: relative;
-		  min-height: 100%;
-		}
 
-		body {
-		  padding-top: 60px;
-		  margin-bottom: 75px;
-		}
+			/*
+			General
+			*/
+			html {
+				position: relative;
+				min-height: 100%;
+			}
+			body {
+				padding-top: 60px;
+				margin-bottom: 75px;
+			}
+			footer {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				height: 45px;
+				line-height: 45px;
+			}
+			footer p, footer ul {
+				margin-bottom: 0;
+			}
 
-		footer {
-		  position: absolute;
-		  bottom: 0;
-		  width: 100%;
-		  height: 45px;
-		  line-height: 45px;
-
-		  p,
-		  ul {
-		    margin-bottom: 0;
-		  }
-		}
-
-		// Navbar
-		// -------------------------
-
-		.navbar-nav img {
-		  width: 30px;
-		  height: 30px;
-		  margin: -15px 15px -15px;
-		}
+			/*
+			Navbar
+			*/
+			.navbar-nav img {
+				width: 30px;
+				height: 30px;
+				margin: -15px 15px -15px;
+			}
+			.dropdown-toggle {
+				padding: 10px 15px;
+			}
 		
-		.dropdown-toggle {
-			padding: 10px 15px;
-		}
-		
-		// Alerts
-		// -------------------------
-
-		.alert {
-		  margin-top: 20px;
-		}
-
-		// Thumbnails
-		// -------------------------
-
-		.thumbnail {
-		  padding: 0;
-		  border-radius: 0;
-		  box-shadow: 0 0 5px #ccc, inset 0 0 0 #000;
-		}
-
-		// Font Icons
-		// -------------------------
-
-		.fa, [class^="ion"] {
-		  margin-right: 6px;
-		}
+			.alert {
+				margin-top: 20px;
+			}
+			
+			/*
+			Thumbnails
+			*/
+			.thumbnail {
+				padding: 0;
+				border-radius: 0;
+				box-shadow: 0 0 5px #ccc, inset 0 0 0 #000;
+			}
+			
+			/*
+			Font Icons
+			*/
+			.fa, [class^="ion-"] {
+				margin-right: 6px;
+			}
+			
+			/*
+			Social Buttons
+			*/
+			.btn-social {
+				position: relative;
+				padding-left: 44px;
+				text-align: left;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			.btn-facebook {
+				color: #ffffff;
+				background-color: #3b5998;
+				border-color: rgba(0, 0, 0, 0.2);
+			}
 		</style>
-  </head>
-  <body>
+	</head>
+	<body>
 		{% include 'snippets/navbar.html' %}
-    <div class="container">
+		<div class="container">
 			{% include 'snippets/flash.html' %}
 			{% block content %}
 			{% endblock %}
-    </div>
+		</div>
 		{% include 'snippets/footer.html' %}
+		<script src="/js/lib/jquery-2.1.1.min.js"></script>
+		<script src="/css/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script src="/js/main.js"></script>
-  </body>
+		
+		
+	</body>
 </html>
