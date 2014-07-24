@@ -6216,7 +6216,7 @@ button.close {
  */
 .btn-social {
   position: relative;
-  padding-left: 32px + 12px;
+  padding-left: 44px;
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
@@ -6259,7 +6259,7 @@ button.close {
 }
 .btn-social-icon {
   position: relative;
-  padding-left: 32px + 12px;
+  padding-left: 44px;
   text-align: left;
   white-space: nowrap;
   overflow: hidden;
