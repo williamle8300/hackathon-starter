@@ -10,7 +10,7 @@ The complete glyphicon, font-awesome, and ionicon iconsets are included.
 
 To deploy:
 npm install in `/`
-npm install in `/public/css/lib/bootstrap`
+npm install in `/public/bootstrap`
 ---
 
 ![Alt](https://lh4.googleusercontent.com/-PVw-ZUM9vV8/UuWeH51os0I/AAAAAAAAD6M/0Ikg7viJftQ/w1286-h566-no/hackathon-starter-logo.jpg)
